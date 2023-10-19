@@ -1,9 +1,14 @@
 import React from "react";
 
+// components
+import PostCard from "./PostCard";
+
 // prisma client
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
+
+
 
 const Posts = async () => {
     // users
@@ -23,6 +28,12 @@ const Posts = async () => {
         <div>
             {/* <p>Posts component</p> */}
             <h1 className="text-2xl text-center mt-6">Popular Posts</h1>
+            <div>
+                {posts.map((post) => (
+                    <PostCard key={post.id} post={post} />
+                ))}
+            </div>
+
 
 
 
