@@ -21,7 +21,9 @@ const Posts = async () => {
 
     return (
         <div>
-            <p>Posts component</p>
+            {/* <p>Posts component</p> */}
+            <h1 className="text-2xl text-center mt-6">Popular Posts</h1>
+
 
 
         </div>
