@@ -44,6 +44,9 @@ const NavBar = () => {
                             <li className={liHoverStyles}>
                                 <Link href="/contact">Contact</Link>
                             </li>
+                            <li className={liHoverStyles}>
+                                <Link href="/login">Login</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
